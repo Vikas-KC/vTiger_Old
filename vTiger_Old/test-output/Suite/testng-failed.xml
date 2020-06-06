@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestRunner1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.vTiger.testScripts.CreateProductsTest">
+        <methods>
+          <include name="configAC"/>
+          <include name="configBC"/>
+          <include name="createProductTest"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+        </methods>
+      </class> <!-- com.vTiger.testScripts.CreateProductsTest -->
+    </classes>
+  </test> <!-- TestRunner1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
